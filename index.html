@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reto 3 - Calculadora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BLOQUE 1: ACCESO -->
+    <div id="view-start" class="view">
+      <!-- view--active visualización de BLOQUE ACTIVO -->
+      <div class="start-wrapper">
+        <p class="start-text">PARA EMPEZAR PULSA</p>
+        <p><button id="btn-start" class="key-retro">START</button></p>
+      </div>
+    </div>
+
+    <!-- BLOQUE 2: CARGANDO -->
+    <div id="view-loading" class="view">
+      <div class="loading-wrapper">
+        <div class="dino"></div>
+        <div class="ground"></div>
+        <p class="loading-text">CARGANDO…</p>
+      </div>
+    </div>
+
+    <!-- BLOQUE 3: CALCULADORA -->
+    <div id="view-calculator" class="view view--active">
+      <h1 class="page-title">CALCULADORA WEB</h1>
+
+      <div class="calculator">
+        <div class="calculator__screen">
+          <div id="history" class="calculator__history"></div>
+          <div id="screen" class="calculator__result">0</div>
+        </div>
+
+        <div class="calculator__keys">
+          <!-- fila 1 -->
+
+          <button data-key="sign" class="key key--sign">±</button>
+          <button data-key="clear" class="key key--clear key--span2">C</button>
+          <button
+            data-key="operator"
+            data-operator="/"
+            class="key key--operator"
+          >
+            /
+          </button>
+
+          <!-- fila 2 -->
+          <button data-key="7" class="key">7</button>
+          <button data-key="8" class="key">8</button>
+          <button data-key="9" class="key">9</button>
+          <button
+            data-key="operator"
+            data-operator="*"
+            class="key key--operator"
+          >
+            ×
+          </button>
+
+          <!-- fila 3 -->
+          <button data-key="4" class="key">4</button>
+          <button data-key="5" class="key">5</button>
+          <button data-key="6" class="key">6</button>
+          <button
+            data-key="operator"
+            data-operator="-"
+            class="key key--operator"
+          >
+            −
+          </button>
+
+          <!-- fila 4 -->
+          <button data-key="1" class="key">1</button>
+          <button data-key="2" class="key">2</button>
+          <button data-key="3" class="key">3</button>
+          <button
+            data-key="operator"
+            data-operator="+"
+            class="key key--operator"
+          >
+            +
+          </button>
+
+          <!-- fila 5 -->
+          <button data-key="0" class="key">0</button>
+          <button data-key="." class="key key--decimal">.</button>
+          <button data-key="equals" class="key key--equals key--span2">
+            =
+          </button>
+        </div>
+      </div>
+
+      <button id="btn-exit" class="key-retro key-retro--exit">EXIT</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
