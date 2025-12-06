@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Iconos en drives externos
+Icon?
+._*
+
+# Archivos temporales de macOS
+.Spotlight-V100
+.Trashes
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Sistema
+Thumbs.db
