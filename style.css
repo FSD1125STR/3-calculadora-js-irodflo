@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
   width: 100%;
 }
 
@@ -33,13 +33,11 @@ body {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 3.5rem;
+  margin-top: 2rem;
   width: 100%;
   font-size: 0.65rem;
   opacity: 0.6;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +141,7 @@ body {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #945c65;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 
 .calculator {
@@ -302,7 +300,6 @@ body {
 
   .footer {
     font-size: 0.6rem;
-    bottom: 1.5%;
     padding: 0.25rem 0;
   }
 }
